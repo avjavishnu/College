@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Section Details</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th>sectionId</th>
+    <th>sectionName</th>
+    <th>numberOfEmployees</th>
+  </tr>
+  {% for record in query %}
+  <tr>
+    <td>{{ record.sectionId }}</td>
+    <td>{{ record.sectionName }}</td>
+    <td>{{ record.numberOfEmployees }}</td>
+  </tr>
+  {% endfor %}
+</table>
+</body>
+</html>

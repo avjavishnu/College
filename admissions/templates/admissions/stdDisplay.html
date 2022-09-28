@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Details</title>
+</head>
+<body>
+<table>
+    <tr>
+  <th>StudentID</th>
+  <th>Name</th>
+    <th>departmentId</th>
+    <th>dateOfBirth</th>
+    <th>gender</th>
+    <th>bloodGroup</th>
+    <th>addressLine1</th>
+    <th>addressLine2</th>
+    <th>state</th>
+    <th>pincode</th>
+    <th>degree</th>
+    <th>marks</th>
+    <th>createdOn</th>
+    <th>isActive</th>
+   </tr>
+  {% for record in query %}
+    <tr>
+        <td>{{ record.studentId }}</td>
+        <td>{{ record.studentName }}</td>
+        <td>{{ record.departmentId}}</td>
+        <td>{{ record.dateOfBirth }}</td>
+        <td>{{ record.gender }}</td>
+        <td>{{ record.bloodGroup }}</td>
+        <td>{{ record.addressLine1 }}</td>
+        <td>{{ record.addressLine2 }}</td>
+        <td>{{ record.state }}</td>
+        <td>{{ record.pincode }}</td>
+        <td>{{ record.degree }}</td>
+        <td>{{ record.marks }}</td>
+        <td>{{ record.createdOn }}</td>
+        <td>{{ record.isActive }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
